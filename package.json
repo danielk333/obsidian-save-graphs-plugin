@@ -1,8 +1,12 @@
 {
-	"name": "obsidian-sample-plugin",
-	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"name": "obsidian-save-graphs-plugin",
+	"version": "0.1.0",
+	"description": "This plugin allows you to save and load graphs.",
 	"main": "main.js",
+	"dependencies": {
+		"@types/node": "^16.11.6",
+		"glob": "^10.2.3"
+	},
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
